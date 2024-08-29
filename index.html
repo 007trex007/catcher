@@ -27,8 +27,10 @@
 
       tg.expand()
       tg.setHeaderColor('#fffde6')
-      tg.sendData('test data')
-      tg.MainButton.setParams(text='Сохранить', color='#fffde6', is_visible=true, is_active=true)
+      <!-- tg.sendData('test data') -->
+      tg.MainButton.setParams(text='Сохранить', color='#fffde6')
+      tg.MainButton.show()
+      tg.MainButton.enable()
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

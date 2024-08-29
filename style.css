@@ -80,3 +80,6 @@
     font-size: 16px;
     padding: auto;
   }
+  body {
+    overflow: hidden;
+  }
