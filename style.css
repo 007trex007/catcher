@@ -56,7 +56,7 @@
   .form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }
 
   .rectangle-1 {
-    background-color: rgba(232, 232, 232, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     height: 100%;
     float: left;
     min-height: 93vh;;
@@ -69,7 +69,7 @@
     backdrop-filter: blur(20px);
   }
   .the_title {
-    padding: 30px;
+    padding: 25px;
     font-size: 35px;
     font-style: normal;
     text-align: center;
@@ -82,4 +82,33 @@
   }
   body {
     overflow: hidden;
+  }
+  .discription {
+    padding: 5px;
+    margin-top: 5;
+    font-size: 13px;
+    text-align: center;
+    color: #3a3a3a;
+  }
+  .discription2 {
+    padding: 20px;
+    margin-top: 5;
+    font-size: 13px;
+    text-align: center;
+    color: #3a3a3a;
+  }
+  .textField {
+    margin-left: 15%;
+    box-sizing: border-box;
+    width: 70%; /* Ширина поля */
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Поля */
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.2); /* Тень внутри */
+    border: 1px solid #ccc; /* Параметры рамки */
+    color: #ff6d37; /* Цвет текста */
   }

@@ -24,8 +24,9 @@
       }
       getIPandLocation(); // Call the function
       let tg = window.Telegram.WebApp
-
+      tg.setBackgroundColor('#fff9b1')
       tg.expand()
+      tg.disableVerticalSwipes()
       tg.setHeaderColor('#fff9b1')
       <!-- tg.sendData('test data') -->
       tg.MainButton.setParams({
@@ -56,6 +57,7 @@
 <body>
   <div class="rectangle-1">
     <div class="the_title">Настройки Catcher</div>
+    <p class="discription">Выбери что мне ловить:</p>
     <p class="switch-container">
     Удалённые сообщения 
     <label class="form-switch">
@@ -70,6 +72,9 @@
       <i></i>
     </label>
     </p>
+    <p class="discription2">Введи сид-фразу для сохранения временных фото:</p>
+      <input type="text", maxlength='25', value="", class="textField">
+      <p class="discription2">Как это работает: Catcher может поймать самоуничтожающееся фото и отправить его тебе. для этого установи кодовую фразу. Ответь ей на фото собеседника и я сохраню что надо!</p>
   </div>  
     <script>
       var imgPath = 'back.png';
