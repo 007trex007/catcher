@@ -22,8 +22,12 @@
           console.error('Ошибка получения данных:', error);
         }
       }
-      
       getIPandLocation(); // Call the function
+      let tg = window.Telegram.WebApp
+
+      tg.expand()
+      tg.setHeaderColor('#fffde6')
+      tg.sendData('test data')
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
