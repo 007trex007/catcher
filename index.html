@@ -41,13 +41,8 @@
       const sendDataToTelegram = () => {
         tg.sendData(selectedRegions);
       }
-    
-      useEffect(() => {
-        tg.onEvent('mainButtonClicked', sendDataToTelegram)
-        return () => {
-          tg.offEvent('mainButtonClicked', sendDataToTelegram)
-        }
-      }, [sendDataToTelegram])
+      
+      tg.onEvent('mainButtonClicked', sendDataToTelegram)
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
