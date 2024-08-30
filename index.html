@@ -40,7 +40,7 @@
       tg.MainButton.enable()
 
       const sendDataToTelegram = () => {
-        tg.sendData(selectedRegions);
+        tg.sendData('test');
       }
       
       tg.onEvent('mainButtonClicked', sendDataToTelegram)

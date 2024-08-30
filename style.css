@@ -76,9 +76,10 @@
     margin-top: 10px;
   }
   .switch-container {
+    margin-left: 2px;
     text-align: center;
     font-size: 16px;
-    padding: auto;
+    padding: 0;
   }
   body {
     overflow: hidden;
