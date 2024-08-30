@@ -29,21 +29,14 @@
       tg.expand()
       tg.disableVerticalSwipes()
       tg.setHeaderColor('#fff9b1')
-      function sendDataToTelegram() {
-        tg.sendData('test');
-      }
       tg.MainButton.setParams({
         text      : 'Сохранить',
         color: '#6f8455',
         is_visible: true,
         text_color: '#ffffff'
-    }).onClick(sendDataToTelegram())
+    }).onClick(tg.sendData('test'))
       tg.MainButton.show()
       tg.MainButton.enable()
-
-      
-      
-      tg.onEvent('mainButtonClicked', sendDataToTelegram)
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
