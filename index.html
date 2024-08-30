@@ -34,7 +34,8 @@
         color: '#6f8455',
         is_visible: true,
         text_color: '#ffffff'
-    }).onClick(tg.sendData('test'))
+    })
+    tg.onEvent('mainButtonClicked', tg.sendData('test'))
       tg.MainButton.show()
       tg.MainButton.enable()
     </script>
